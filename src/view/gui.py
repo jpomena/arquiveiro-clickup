@@ -17,19 +17,19 @@ class GUI(ttk.Window):
 
         self.parameters = {
             'user': {
-                'label': 'Usuário:',
+                'label': '*Usuário:',
                 'entry': None,
                 'tk_var': tk.StringVar(),
                 'row': 0
             },
             'password': {
-                'label': 'Senha:',
+                'label': '*Senha:',
                 'entry': None,
                 'tk_var': tk.StringVar(),
                 'row': 1
             },
             'list_name': {
-                'label': 'Lista Alvo:',
+                'label': '*Lista Alvo:',
                 'entry': None,
                 'tk_var': tk.StringVar(),
                 'row': 2

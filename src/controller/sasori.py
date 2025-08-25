@@ -35,11 +35,20 @@ class Sasori:
         self.extracting_data = False
 
     def login_to_clickup(self):
+        user = self.gui.get_parameter('user')
+        password = self.gui.get_parameter('password')
+        list_name = self.gui.get_parameter('list_name')
+
+        if not user or not password or not list_name:
+            log('Insira todos os dados obrigatórios!')
+            self.extracting_data = False
+            self.gui.stop_extraction_btn.config(state='disabled')
+            self.gui.start_extraction_btn.config(state='normal')
+            return
+
         if not self.extracting_data:
             return
         self.extracting_data = True
-        user = self.gui.get_parameter('user')
-        password = self.gui.get_parameter('password')
         driver_path = self.gui.get_parameter('driver_path')
 
         self.pb.open_browser(driver_path)
@@ -166,6 +175,7 @@ class Sasori:
 
     def stop_extraction(self):
         self.extracting_data = False
+        log('Comando para interromper a extração recebido.')
         self.gui.stop_extraction_btn.config(state='disabled')
         self.gui.start_extraction_btn.config(state='normal')
 
