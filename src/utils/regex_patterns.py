@@ -38,7 +38,7 @@ class RegexPatterns:
 
     backlog = re.compile(rf'(?:{backlog_pattern})(?:.*?)\n(?:.*?)({older_pattern}|{yesterday_pattern}|{today_pattern3}|{today_pattern2}|{today_pattern1})')  # noqa: E501
     start = re.compile(rf'(?:{start_pattern})(?:.*?)\n(?:.*?)\n(?:.*?)({older_pattern}|{yesterday_pattern}|{today_pattern3}|{today_pattern2}|{today_pattern1})')  # noqa: E501
-    done = re.compile(rf'(?:{done_pattern})')  # (?:.*?)\n(?:.*?)({older_pattern}|{yesterday_pattern}|{today_pattern3}|{today_pattern2}|{today_pattern1})')  # noqa: E501
+    done = re.compile(rf'(?:{done_pattern})(?:.*?)\n(?:.*?)({older_pattern}|{yesterday_pattern}|{today_pattern3}|{today_pattern2}|{today_pattern1})')  # noqa: E501
     delivery = re.compile(rf'(?:{delivery_pattern})(?:.*?)\n(?:.*?)({older_pattern}|{yesterday_pattern}|{today_pattern3}|{today_pattern2}|{today_pattern1})')  # noqa: E501
     name = re.compile(re.escape('style="text-indent: 0px;">') + r'(.*?)(?=<)')  # noqa: E501
     tag = re.compile(re.escape('tags-select__name-shadow-') + r'(.*?)(?=")')
