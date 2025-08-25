@@ -50,6 +50,7 @@ A aplicação requer as seguintes bibliotecas Python:
 -   `selenium`
 -   `beautifulsoup4`
 -   `ttkbootstrap`
+-   `pandas`
 
 Elas podem ser instaladas usando o pip:
 
