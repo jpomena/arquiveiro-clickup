@@ -69,3 +69,5 @@ Além disso, requer que o Mozilla Firefox e o Gecko driver estejam instalados no
 5.  Clique em "Iniciar Extração" para começar o processo.
 6.  A janela de log mostrará o progresso da extração.
 7.  Clique em "Parar Extração" para interromper o processo a qualquer momento.
+
+<a href="https://www.flaticon.com/free-icons/archives" title="archives icons">Archives icons created by Freepik - Flaticon</a>
